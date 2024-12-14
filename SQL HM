@@ -1,0 +1,36 @@
+# 1.
+CREATE TABLE shopping (id INTEGER PRIMARY KEY, name TEXT, amount
+INTEGER);
+ - create a table with id, name and amount
+DROP TABLE shopping
+ - deleting the table shopping
+
+# 2.
+ALTER table shopping RENAME to shopp - rename table from shopping to shopp
+ALTER table shopp RENAME to shopping - rename table from shopp to shopping
+
+# 3.                        #id  #name    #amount
+INSERT INTO shopping VALUES (1, 'Avocado', 5);
+INSERT INTO shopping VALUES (2, 'Milk', 2);
+INSERT INTO shopping VALUES (3, 'Bread', 3);
+INSERT INTO shopping VALUES (4, 'Chocolate', 8);
+INSERT INTO shopping VALUES (5, 'Bamba', 5);
+INSERT INTO shopping VALUES (6, 'Orange', 10);
+
+the first number is for how manny items in the cart for example,
+after that the name of every items in the cart,
+and at last the amount of every item
+
+# 4.
+select * from shopping - meaning that you can select a item in the cart
+
+# 5.
+SELECT id, name FROM shopping - you can see the id and the name of the item
+
+# 6.
+SELECT * FROM shopping WHERE amount > 5 - you can select item that has more than 5 in the amount
+for example you can select 'Chocolate' and 'Orange'
+SELECT * FROM shopping WHERE amount = 2 - you can select item that has equal 2 in the amount like 'Milk'
+SELECT * FROM shopping WHERE name LIKE 'Bamba' - you can select item that is 'Bamba'
+
+
